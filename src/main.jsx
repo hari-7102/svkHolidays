@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
+// import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import React , { lazy , Suspense } from 'react'
+
+import App from './App' 
+import Loader from './pages/Loader'
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+    <Suspense fallback={<Loader/>}>
+      <App />
+    </Suspense>
+  
 )

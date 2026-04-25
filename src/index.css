@@ -1,3 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom Font Class */
+@layer base {
+  .font-audiowide {
+    font-family: "Cinzel", serif;
+  }
+  .font-nunito{
+    font-family: "Nunito Sans", sans-serif;
+  }
+}
+
+
+
+
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -128,3 +149,7 @@
     @apply font-sans;
     }
 }
+
+
+
+
