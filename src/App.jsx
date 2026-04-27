@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { lazy, Suspense } from 'react'
 import ScrollToTop from '../src/lib/ScrollToTop'
 
+
 const Home = lazy(() => import('./pages/Home'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const TripPage = lazy(() => import('./pages/TripPage'))
