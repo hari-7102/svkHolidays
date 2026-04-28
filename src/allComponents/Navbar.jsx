@@ -34,8 +34,8 @@ const Navbar = () => {
     const IsopenNavbarItems = [
     { name: "HOME", link: "/" },
     { name: "ABOUT", link: "/about" },
-    { name: "SERVICES", link: "/services" },
-    { name: "GALLERY", link: "/gallery" },
+    { name: "TRIPS", link: "/trip" },
+    { name: "REVIEWS", link: "/review" },
     
     { name: "CONTACT", link: "/contact" },
   ];
@@ -86,7 +86,7 @@ const Navbar = () => {
         <div className="flex items-center gap-0.5">
           {/* <Building2 size={24} className="text-black" /> */}
           <img src={logo} alt=""  className="w-auto md:h-11 h-9"/>
-          <p onClick={() => navigate('/')} className="font-medium text-xl  md:text-2xl text-black">Sri Sakthi  Builders</p>
+          <p onClick={() => navigate('/')} className="font-medium text-xl  md:text-2xl text-black">SVK Holidays</p>
         </div>
 
         <button onClick={() => Setiopen(!Isopen)}>
